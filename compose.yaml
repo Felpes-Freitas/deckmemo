@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: deckmemo-web
     ports:
-      - "9090:80"
+      - "${PORT}:80"
     volumes:
       - .:/var/www/html
     # Garante que o diretório de dados seja gravável pelo servidor Apache dentro do container

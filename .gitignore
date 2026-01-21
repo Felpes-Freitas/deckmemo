@@ -8,3 +8,4 @@ Thumbs.db
 
 # Arquivos de configuração local (se houver)
 .env.local
+.env
