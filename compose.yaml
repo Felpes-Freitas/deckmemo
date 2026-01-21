@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: deckmemo-web
+    ports:
+      - "9090:80"
+    volumes:
+      - .:/var/www/html
+    # Garante que o diretório de dados seja gravável pelo servidor Apache dentro do container
+    # Isso é especialmente importante para a criação e escrita do arquivo SQLite.
+    command: >
+      bash -c "chown -R www-data:www-data /var/www/html/data &&
+               apache2-foreground"
+
+networks:
+  default:
+    name: deckmemo-network

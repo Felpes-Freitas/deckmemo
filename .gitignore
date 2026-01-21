@@ -1,0 +1,10 @@
+# Banco de dados SQLite
+/data/deckmemo.sqlite
+/data/deckmemo.sqlite-journal
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração local (se houver)
+.env.local
