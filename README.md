@@ -37,4 +37,4 @@ The core of DeckMemo is based on the idea of creating associations between a kno
    docker-compose up -d
    ```
 4. **Access the application in your browser:**
-   [http://localhost:8080](http://localhost:8080)
+   [http://localhost:9090](http://localhost:9090)
